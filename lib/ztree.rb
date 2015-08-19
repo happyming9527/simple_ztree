@@ -12,7 +12,7 @@ class ActionController::Base
   helper_method :ztree_settings
 end
 
-class ApplicationHelper
+module ApplicationHelper
   include Ztree::Helpers
 end
 
