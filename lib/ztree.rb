@@ -12,4 +12,8 @@ class ActionController::Base
   helper_method :ztree_settings
 end
 
+class ApplicationHelper
+  include Ztree::Helpers
+end
+
 ActiveRecord::Base.send :include, SortTree
